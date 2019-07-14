@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "pack:button": "cd dist/button && npm pack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "private": true,
   "dependencies": {
