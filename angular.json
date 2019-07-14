@@ -37,6 +37,41 @@
           }
         }
       }
+    },
+    "bb-datepicker": {
+      "projectType": "library",
+      "root": "projects/bb-datepicker",
+      "sourceRoot": "projects/bb-datepicker/src",
+      "prefix": "bb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/bb-datepicker/tsconfig.lib.json",
+            "project": "projects/bb-datepicker/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bb-datepicker/src/test.ts",
+            "tsConfig": "projects/bb-datepicker/tsconfig.spec.json",
+            "karmaConfig": "projects/bb-datepicker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bb-datepicker/tsconfig.lib.json",
+              "projects/bb-datepicker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "button"
 }

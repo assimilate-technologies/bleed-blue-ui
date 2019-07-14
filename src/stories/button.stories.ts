@@ -1,8 +1,8 @@
 import { storiesOf } from '@storybook/angular';
 import { ButtonComponent } from 'button';
 
-storiesOf('button', module)
-    .add('basic', () => ({
+storiesOf('Button', module)
+    .add('Basic', () => ({
         component: ButtonComponent,
         props: {
             text: 'hello'
@@ -10,7 +10,7 @@ storiesOf('button', module)
     }), {
             notes: 'The Hello Button',
         })
-    .add('disabled', () => ({
+    .add('Disabled', () => ({
         component: ButtonComponent,
         props: {
             text: 'disabled',

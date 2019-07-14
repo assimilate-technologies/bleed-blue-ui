@@ -24,6 +24,12 @@
       ],
       "button/*": [
         "dist/button/*"
+      ],
+      "bb-datepicker": [
+        "dist/bb-datepicker"
+      ],
+      "bb-datepicker/*": [
+        "dist/bb-datepicker/*"
       ]
     }
   },
